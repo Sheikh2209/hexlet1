@@ -1,0 +1,67 @@
+/* stylelint-disable declaration-block-no-redundant-longhand-properties */
+
+body {
+    margin: 0;
+    
+    /* BEGIN (write your solution here) */
+    
+    
+    /* END */
+    font-family: sans-serif;
+    line-height: 1.5;
+  }
+  
+  /* BEGIN (write your solution here) */
+  .center-block {
+    margin: auto;
+    text-align: center;
+  }
+  /* END */
+  
+  .heading {
+    padding-bottom: 30px;
+    position: relative; /* Необходимо для правильного позиционирования псевдоэлемента */
+  
+    /* Дополнительные стили для примера */
+    width: fit-content; /* Элемент h2 занимает только необходимое пространство */
+    margin: 0 auto;
+  }
+  
+  .heading::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0; /* Располагает псевдоэлемент внизу относительно элемента h2 */
+    left: 50%; /* Располагает псевдоэлемент по горизонтали относительно элемента h2 */
+    width: 1000px; /* Задает ширину линии (80% ширины контейнера) */
+    height: 2px;
+    background-color: #e3e3e3; /* Цвет линии */
+    transform: translateX(-50%); /* Центрирует линию относительно элемента h2 */
+  }
+  main {
+    width: 900px;
+    margin: auto;
+  }
+  
+  /* BEGIN (write your solution here) */
+
+  h3, h4, h5 {
+    font-size: 24px;
+    margin-top: 30px;
+  }
+
+  .paragraph {
+    margin-left: 30px;
+    position: relative; /* Необходимо для правильного позиционирования псевдоэлемента */
+    padding-left: 10px; /* Добавляет отступ слева для текста */
+  }
+
+  .paragraph::before {
+    content: '\2022'; /* Добавляет точку перед текстом */
+    position: absolute;
+    left: -5px; /* Располагает точку слева относительно элемента p */
+    font-size: 20px; /* Размер шрифта точки */
+    color: #000000; /* Цвет точки */
+  }
+  /* END */
+  
