@@ -1,67 +1,62 @@
 /* stylelint-disable declaration-block-no-redundant-longhand-properties */
 
 body {
-    margin: 0;
-    
-    /* BEGIN (write your solution here) */
-    
-    
-    /* END */
-    font-family: sans-serif;
-    line-height: 1.5;
-  }
+  margin: 0;
   
   /* BEGIN (write your solution here) */
-  .center-block {
-    margin: auto;
-    text-align: center;
-  }
+  font-size: 18px;
+  color: #333;
   /* END */
-  
-  .heading {
-    padding-bottom: 30px;
-    position: relative; /* Необходимо для правильного позиционирования псевдоэлемента */
-  
-    /* Дополнительные стили для примера */
-    width: fit-content; /* Элемент h2 занимает только необходимое пространство */
-    margin: 0 auto;
-  }
-  
-  .heading::after {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 0; /* Располагает псевдоэлемент внизу относительно элемента h2 */
-    left: 50%; /* Располагает псевдоэлемент по горизонтали относительно элемента h2 */
-    width: 1000px; /* Задает ширину линии (80% ширины контейнера) */
-    height: 2px;
-    background-color: #e3e3e3; /* Цвет линии */
-    transform: translateX(-50%); /* Центрирует линию относительно элемента h2 */
-  }
-  main {
-    width: 900px;
-    margin: auto;
-  }
-  
+
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+/* BEGIN (write your solution here) */
+h1 {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-size: 60px;
+  text-align: center;
+}
+
+/* END */
+
+h2 {
   /* BEGIN (write your solution here) */
-
-  h3, h4, h5 {
-    font-size: 24px;
-    margin-top: 30px;
-  }
-
-  .paragraph {
-    margin-left: 30px;
-    position: relative; /* Необходимо для правильного позиционирования псевдоэлемента */
-    padding-left: 10px; /* Добавляет отступ слева для текста */
-  }
-
-  .paragraph::before {
-    content: '\2022'; /* Добавляет точку перед текстом */
-    position: absolute;
-    left: -5px; /* Располагает точку слева относительно элемента p */
-    font-size: 20px; /* Размер шрифта точки */
-    color: #000000; /* Цвет точки */
-  }
+  margin-top: 0px;
+  padding-bottom: 30px;
+  font-size: 25px;
+  text-align: center;
   /* END */
-  
+
+  border-bottom: 2px solid #e3e3e3;
+}
+
+main {
+  width: 900px;
+  margin: auto;
+}
+
+/* BEGIN (write your solution here) */
+section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.title {
+  padding: 0;
+  text-align: left;
+  border: none;
+}
+
+li {
+  margin: 10px;
+}
+/* END */
